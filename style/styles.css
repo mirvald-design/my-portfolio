@@ -1,6 +1,6 @@
 /* Import fonts with a fallback font */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap");
-@import url(/style/reset.css);
+@import url(style/reset.css);
 
 :root {
   --bg-color-dark: #000;
