@@ -56,6 +56,18 @@ body {
   gap: var(--gap-12);
 }
 
+.title .animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.title .animated.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Heading styles */
 h1 {
   font-size: var(--h1-size);
