@@ -157,6 +157,7 @@ input:checked + .slider .dark-icon {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-size: var(--title-size);
+  font-weight: 600;
 }
 
 .title .animated.active {
