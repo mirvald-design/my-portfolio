@@ -2,14 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap");
 @import url(./reset.css);
 
-
-
 /* Variables */
 :root {
   /* Colors */
   --bg-color: #000;
   --text-color: #fff;
-  --text-color-secondary: #A1A1AA;
+  --text-color-secondary: #a1a1aa;
   --bg-card: #0f1419;
   --btn-text-color: #0f1419;
   --border-color-badge: #e6e6e9;
@@ -57,7 +55,7 @@
 .dark-theme {
   --bg-color: #000000;
   --text-color: #fff;
-  --text-color-secondary: #A1A1AA;
+  --text-color-secondary: #a1a1aa;
   --bg-card: #0f1419;
   --color-primary: #fff;
   --bg-btn-color: #262b2f;
@@ -332,22 +330,20 @@ p {
     flex: 1 0 0;
     flex-wrap: wrap;
   }
-
-  
 }
 
 /* Media Queries for larger screens */
 @media (min-width: 1025px) {
+  body {
+    display: flex;
+    height: 100vh;
+  }
   .main {
     display: flex;
-    justify-content: center;
     max-width: 1068px;
     margin: auto;
     gap: 12px;
-    padding-top: 24px;
   }
-
-  
 
   .left-box {
     display: flex;
@@ -355,7 +351,8 @@ p {
     justify-content: space-between;
     height: 100vh;
     position: sticky;
-    top: 0;
+    top: 24px;
+    bottom: 24px;
     max-width: 408px;
     padding: var(--padding-web);
     background-color: var(--bg-card);
@@ -380,6 +377,8 @@ p {
     gap: var(--gap-12);
     width: calc(100% - 408px);
     overflow-y: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .projects-box {

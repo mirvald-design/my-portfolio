@@ -6,9 +6,8 @@
     flex-direction: column;
     justify-content: center;
     max-width: 648px;
-    margin: 12px;
     gap: var(--gap-12);
-
+    padding: var(--padding-mobile);
   }
 
   .content-project {
@@ -17,6 +16,7 @@
     gap: var(--gap-12);
     background-color: #0f1419;
     padding: 20px;
+    border-radius: var(--border-radius-mobile);
   }
 
   .container-photo {
