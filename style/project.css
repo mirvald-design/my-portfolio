@@ -1,4 +1,4 @@
-@import url(style/styles.css);
+@import url(./styles.css);
 
 @media (max-width: 1024px){
   .main-project {
@@ -6,8 +6,9 @@
     flex-direction: column;
     justify-content: center;
     max-width: 648px;
-    margin: auto;
+    margin: 12px;
     gap: var(--gap-12);
+
   }
 
   .content-project {
@@ -47,7 +48,10 @@
     gap: var(--gap-24);
     background-color: #0f1419;
     padding: 40px;
+    border-radius: var(--border-radius-web);
   }
+
+
 
   .container-photo {
     display: flex;

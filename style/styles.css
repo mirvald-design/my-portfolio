@@ -1,45 +1,75 @@
 /* Import fonts with a fallback font */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap");
-@import url(style/reset.css);
+@import url(./reset.css);
 
+/* Variables */
 :root {
-  --bg-color-dark: #000;
-  --text-color-dark: #fff;
-  --bg-card-dark: #0f1419;
-  --p-text-color-dark: #949495;
-  --text-color-primary: #0f1419;
+  /* Colors */
+  --bg-color: #000;
+  --text-color: #fff;
+  --text-color-secondary: #666d80;
+  --bg-card: #0f1419;
+  --btn-text-color: #0f1419;
+  --border-color-badge: #e6e6e9;
   --background-badge-light: #your-background-badge-light-color; /* Define this color */
   --text-badge: #your-text-badge-color; /* Define this color */
+  --bg-btn-color: #f7f7f9;
 
-  /* font-size for paragraphs */
+  /* Fonts */
+  --font-default: Urbanist, sans-serif;
+
+  /* Breakpoints */
+  --bp-small: 768px;
+  --bp-large: 1024px;
+
+  /* Font sizes and styles */
   --p-text-size: 14px;
   --p-line-height: 20px;
   --p-font-weight: 400;
-
-  /* font-size for headings */
   --h1-size: 24px;
   --h1-line-height: 32px;
   --h1-font-weight: 600;
 
-  /* padding for different screen sizes */
+  /* Padding and spacing */
   --padding-web: 40px;
   --padding-mobile: 20px;
-
-  /* border-radius for different screen sizes */
   --border-radius-web: 24px;
   --border-radius-mobile: 12px;
-
-  /* gap (spacing) for different screen sizes */
   --gap-8: 8px;
   --gap-12: 12px;
   --gap-24: 24px;
 }
 
-/* Body styles and font fallback */
+/* Themes */
+.light-theme {
+  --bg-color: #f5f5f7;
+  --text-color: #0f1419;
+  --text-color-secondary: #666d80;
+  --bg-card: #ffffff;
+  --color-primary: #333;
+  --bg-btn-color: #f7f7f9;
+  --border-color-badge: #e6e6e9;
+  --btn-text-color: #0f1419;
+}
+
+.dark-theme {
+  --bg-color: #000000;
+  --text-color: #fff;
+  --text-color-secondary: #f5f5f7;
+  --bg-card: #0f1419;
+  --color-primary: #fff;
+  --bg-btn-color: #262b2f;
+  --border-color-badge: #3a3e43;
+  --btn-text-color: #fff;
+}
+
+/* Base Styles */
 body {
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-dark);
-  font-family: Urbanist, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-default);
+  margin: 0;
+  padding: 0;
 }
 
 /* Header styles */
@@ -54,19 +84,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--gap-12);
+  color: var(--text-color);
 }
 
 .title .animated {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: var(--title-size);
 }
 
 .title .animated.active {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 /* Heading styles */
 h1 {
@@ -80,7 +111,7 @@ p {
   font-size: var(--p-text-size);
   line-height: var(--p-line-height);
   font-weight: var(--p-font-weight);
-  color: var(--p-text-color-dark);
+  color: var(--text-color-secondary);
 }
 
 /* Badge styles */
@@ -120,6 +151,7 @@ p {
     opacity: 0.8;
   }
 }
+
 .badge {
   display: flex;
   padding: 12px 24px;
@@ -127,7 +159,7 @@ p {
   align-items: center;
   gap: var(--gap-12);
   border-radius: var(--border-radius-web);
-  background: rgba(247, 247, 249, 0.05);
+  border: 1px solid var(--border-color-badge);
   width: fit-content;
 }
 
@@ -137,49 +169,26 @@ p {
   gap: var(--gap-12);
 }
 
-.box-btn{
+.box-btn {
   display: flex;
 }
+
 /* Style for primary buttons */
-.button.primary {
+.button {
   display: inline-block;
-  padding: 12px 24px; /* Adjust padding as needed */
-  background-color: #fff; /* Change to your primary button color */
-  color: var(--text-color-primary);
+  padding: 12px 24px;
+  background-color: var(--bg-btn-color);
   text-decoration: none;
   border-radius: 24px;
-  margin-right: 10px; /* Adjust spacing between buttons as needed */
-  font-weight: bold;
+  width: fit-content;
+  color: var(--btn-text-color);
 }
-
-/* Style for secondary buttons */
-.button.secondary {
-  display: inline-block;
-  padding: 12px 24px; /* Adjust padding as needed */
-  background-color: #333; /* Change to your secondary button color */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 24px;
-  font-weight: bold;
-}
-
-/* Hover effect for primary buttons */
-.button.primary:hover {
-  background-color: #E2E1E1; /* Change to the hover color you prefer */
-}
-
-/* Hover effect for secondary buttons */
-.button.secondary:hover {
-  background-color: #555; /* Change to the hover color you prefer */
-}
-
 
 /* Media Queries for small screens */
 @media (max-width: 1024px) {
   .main {
     max-width: 100%;
   }
-
 
   .left-box {
     display: flex;
@@ -189,6 +198,7 @@ p {
     width: 100%;
     padding: var(--padding-mobile);
     border-radius: var(--border-radius-mobile);
+    background-color: var(--bg-card);
   }
 
   .avatar {
@@ -196,9 +206,10 @@ p {
     align-items: center;
     gap: var(--gap-12);
   }
+
   .avatar-icon {
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--border-radius-mobile);
   }
 
@@ -219,15 +230,16 @@ p {
     display: flex;
     flex-direction: column;
     gap: var(--gap-24);
-    background-color: var(--bg-card-dark);
+    background-color: var(--bg-card);
     padding: var(--padding-mobile);
     min-width: 288px;
   }
+
   .approach,
   .skills,
   .contact {
     max-width: 100%;
-    background: var(--bg-card-dark);
+    background: var(--bg-card);
     padding: var(--padding-mobile);
     gap: var(--gap-24);
   }
@@ -237,7 +249,7 @@ p {
     min-width: 288px;
     align-items: flex-start;
     align-content: flex-start;
-    gap: var(--gap-24);
+    gap: var(--gap-12);
     flex: 1 0 0;
     flex-wrap: wrap;
   }
@@ -250,8 +262,74 @@ p {
     justify-content: center;
     max-width: 1068px;
     margin: auto;
+    gap: 12px;
+    padding-top: 24px;
   }
-  
+
+  /* Styles for the toggle switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 24px;
+    border: 1px solid rgb(15, 20, 25, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+  }
+
+  /* Styles for light and dark icons */
+  .material-icons {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .light-icon {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+
+  .dark-icon {
+    opacity: 0;
+    transition: opacity 0.4s;
+    color: #fff;
+  }
+
+  input:checked + .slider {
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  input:checked + .slider .light-icon {
+    opacity: 0;
+  }
+
+  input:checked + .slider .dark-icon {
+    opacity: 1;
+  }
 
   .left-box {
     display: flex;
@@ -259,10 +337,10 @@ p {
     justify-content: space-between;
     height: 100vh;
     position: sticky;
-    top: 0; /* Fix the block at the top of the screen */
-    width: 408px;
+    top: 0;
+    max-width: 408px;
     padding: var(--padding-web);
-    border-radius: var(--border-radius-web);
+    background-color: var(--bg-card);
   }
 
   .avatar {
@@ -270,9 +348,10 @@ p {
     display: flex;
     gap: var(--gap-12);
   }
+
   .avatar-icon {
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--border-radius-web);
   }
 
@@ -280,10 +359,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-12);
-    width: calc(
-      100% - 408px
-    ); /* Width is calculated based on screen width and left box */
-    overflow-y: auto; /* Allow vertical scrolling */
+    width: calc(100% - 408px);
+    overflow-y: auto;
   }
 
   .projects-box {
@@ -296,7 +373,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: var(--gap-24);
-    background-color: var(--bg-card-dark);
+    background-color: var(--bg-card);
     padding: var(--padding-web);
     max-width: 320px;
     min-width: 288px;
@@ -307,15 +384,11 @@ p {
     transform: scale(1.1);
     opacity: 1;
   }
-  
+
   .projects-box:hover .projects-card:not(:hover) {
     transform: scale(0.9);
     opacity: 0.5;
   }
-
-  
-
-  
 
   .approach,
   .skills,
@@ -323,7 +396,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: var(--padding-web);
-    background: var(--bg-card-dark);
+    background: var(--bg-card);
     align-content: flex-start;
     align-self: stretch;
     flex-wrap: wrap;
@@ -338,7 +411,7 @@ p {
     min-width: 288px;
     align-items: flex-start;
     align-content: flex-start;
-    gap: var(--gap-24);
+    gap: var(--gap-12);
     flex: 1 0 0;
     flex-wrap: wrap;
   }
