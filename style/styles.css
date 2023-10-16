@@ -307,10 +307,17 @@ p {
   .approach,
   .skills,
   .contact {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     background: var(--bg-card);
     padding: var(--padding-mobile);
-    gap: var(--gap-24);
+    gap: var(--gap-12);
+  }
+
+  .contact-social {
+    display: flex;
+    gap: var(--gap-12);
   }
 
   .skills-badges {
@@ -421,7 +428,7 @@ p {
     flex: 1 0 0;
     flex-wrap: wrap;
   }
-
+  
   .contact-social {
     display: flex;
     gap: var(--gap-12);
