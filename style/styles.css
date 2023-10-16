@@ -299,7 +299,6 @@ p {
   /* Styles for light and dark icons */
   .material-icons {
     font-size: 24px;
-    color: #333;
   }
 
   .light-icon {
@@ -310,7 +309,6 @@ p {
   .dark-icon {
     opacity: 0;
     transition: opacity 0.4s;
-    color: #fff;
   }
 
   input:checked + .slider {
