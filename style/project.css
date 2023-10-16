@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--gap-12);
-    background-color: #0f1419;
+    background-color: var(--bg-card);
     padding: 20px;
     border-radius: var(--border-radius-mobile);
   }
@@ -28,7 +28,7 @@
     align-items: center;
     align-self: stretch;
     border-radius: 24px;
-    background: rgba(247, 247, 249, 0.05);
+    background: var(--bg-btn-color);
   }
 }
 
