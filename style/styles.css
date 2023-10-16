@@ -302,6 +302,7 @@ p {
     background-color: var(--bg-card);
     padding: var(--padding-mobile);
     min-width: 288px;
+    border-radius: var(--border-radius-mobile);
   }
 
   .approach,
@@ -313,6 +314,7 @@ p {
     background: var(--bg-card);
     padding: var(--padding-mobile);
     gap: var(--gap-12);
+    border-radius: var(--border-radius-mobile);
   }
 
   .contact-social {
@@ -356,6 +358,7 @@ p {
     max-width: 408px;
     padding: var(--padding-web);
     background-color: var(--bg-card);
+    border-radius: var(--border-radius-web);
   }
 
   .avatar {
@@ -393,6 +396,7 @@ p {
     max-width: 320px;
     min-width: 288px;
     transition: transform 0.3s, opacity 0.3s;
+    border-radius: var(--border-radius-web);
   }
 
   .projects-card:hover {
@@ -419,6 +423,7 @@ p {
     width: 100%;
     max-width: 648px;
     min-width: 288px;
+    border-radius: var(--border-radius-web);
   }
 
   .skills-badges {
