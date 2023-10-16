@@ -11,8 +11,8 @@
   --bg-card: #0f1419;
   --btn-text-color: #0f1419;
   --border-color-badge: #e6e6e9;
-  --background-badge-light: #your-background-badge-light-color; /* Define this color */
-  --text-badge: #your-text-badge-color; /* Define this color */
+  --text-badge-available: #1A998E;
+  --bg-badge-available: #rgba(26, 153, 142, 0.1)
   --bg-btn-color: #f7f7f9;
 
   /* Fonts */
@@ -50,6 +50,8 @@
   --bg-btn-color: #f7f7f9;
   --border-color-badge: #e6e6e9;
   --btn-text-color: #0f1419;
+  --text-badge-available: #1A998E;
+  --bg-badge-available: rgba(26, 153, 142, 0.1)
 }
 
 .dark-theme {
@@ -61,6 +63,8 @@
   --bg-btn-color: #262b2f;
   --border-color-badge: #3a3e43;
   --btn-text-color: #fff;
+  --text-badge-available: #1A998E;
+  --bg-badge-available: rgba(26, 153, 142, 0.1)
 }
 
 /* Base Styles */
@@ -185,8 +189,8 @@ p {
   gap: var(--gap-8);
   padding: 6px 12px;
   border-radius: 16px;
-  background: var(--background-badge-light);
-  color: var(--text-badge);
+  background-color: var(--bg-badge-available);
+  color: var(--text-badge-available);
   font-size: var(--p-text-size);
   line-height: var(--p-line-height);
   font-weight: var(--h1-font-weight);
