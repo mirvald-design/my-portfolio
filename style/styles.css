@@ -291,7 +291,7 @@ p {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    gap: var(--gap-8);
+    gap: var(--gap-12);
   }
 
   .projects-card {
