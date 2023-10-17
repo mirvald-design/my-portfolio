@@ -389,15 +389,14 @@ p {
 
 /* Media Queries for larger screens */
 @media (min-width: 1025px) {
-  body {
-    display: flex;
-    height: 100vh;
-  }
+
   .main {
     display: flex;
     max-width: 1068px;
     margin: auto;
     gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .main-404{
@@ -420,12 +419,12 @@ p {
 
   .left-box {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
     position: sticky;
     top: 24px;
-    bottom: 24px;
     max-width: 348px;
     padding: var(--padding-web);
     background-color: var(--bg-card);
@@ -450,8 +449,6 @@ p {
     gap: var(--gap-12);
     max-width: 708px;
     overflow-y: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .projects-box {
