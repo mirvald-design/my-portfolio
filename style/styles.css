@@ -479,8 +479,7 @@ p {
     opacity: 0.5;
   }
 
-  .max-width-image {
-    max-width: 150px; /* Здесь можно задать желаемую максимальную ширину, например, max-width: 800px; */
+  .max-width-image { /* Здесь можно задать желаемую максимальную ширину, например, max-width: 800px; */
     height: auto;
 }
 
