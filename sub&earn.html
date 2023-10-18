@@ -78,6 +78,26 @@
 
             <h1>Onboarding</h1>
 
+            <!-- Модальное окно -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="" id="modalImg" class="modal-content">
+            </div>
+
+            <div class="container-photo-text">
+                <img src="./images/project-photo/sub&earn/thumbnails/1.1-sign-in-thumb.png" alt="1.1 - Sign In"
+                    class="max-width-image"
+                    onclick="openModal('./images/project-photo/sub&earn/thumbnails/1.1-sign-in.png', '1.1 - Sign In')">
+                <p>1.1 - Sign In</p>
+            </div>
+            <div class="container-photo-text">
+                <img src="./images/project-photo/sub&earn/thumbnails/1.2-sign-in-thumb.png" alt="1.2 - Sign In"
+                    class="max-width-image"
+                    onclick="openModal('./images/project-photo/sub&earn/1.2-sign-in.png', '1.2 - Sign In')">
+                <p>1.2 - Sign In</p>
+            </div>
+
+
             <div class="container-photo-text">
                 <img src="./images/project-photo/sub&earn/1.1- sign in@1x.png"
                     srcset="./images/project-photo/sub&earn/1.1- sign in@2x.png 2x"
@@ -131,14 +151,14 @@
                 <img src="./images/project-photo/sub&earn/create ads@1x.png"
                     srcset="./images/project-photo/sub&earn/create ads@2x.png 2x"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="max-width-image">
-                    <p>1.1 - Create Ads</p>
+                <p>1.1 - Create Ads</p>
             </div>
 
             <div class="container-photo-text">
                 <img src="./images/project-photo/sub&earn/stat ads@1x.png"
                     srcset="./images/project-photo/sub&earn/stat ads@1x.png 2x"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="max-width-image">
-                    <p>1.1 - Statistics Ads</p>
+                <p>1.1 - Statistics Ads</p>
             </div>
 
             <h1>Other screens</h1>
@@ -147,14 +167,14 @@
                 <img src="./images/project-photo/sub&earn/modal account connected@1x.png"
                     srcset="./images/project-photo/sub&earn/modal account connected@2x.png 2x"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="max-width-image">
-                    <p>1.1 - Modal window account connected</p>
+                <p>1.1 - Modal window account connected</p>
             </div>
 
             <div class="container-photo-text">
                 <img src="./images/project-photo/sub&earn/withdrawal@1x.png"
                     srcset="./images/project-photo/sub&earn/withdrawal@2x.png 2x"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="max-width-image">
-                    <p>1.2 - Withdrawal</p>
+                <p>1.2 - Withdrawal</p>
             </div>
 
 
@@ -172,5 +192,6 @@
     </div>
 </body>
 <script src="/js/theme.js"></script>
+<script src="/js/photo.js"></script>
 
 </html>
