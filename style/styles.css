@@ -255,6 +255,16 @@ p {
   color: var(--btn-text-color);
 }
 
+.button secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--bg-btn-color);
+  text-decoration: none;
+  border-radius: 24px;
+  width: fit-content;
+  color: var(--btn-text-color);
+}
+
 /* Media Queries for small screens */
 @media (max-width: 1024px) {
   .main {
@@ -429,6 +439,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    max-height: 852px;
     position: sticky;
     top: 24px;
     max-width: 348px;
