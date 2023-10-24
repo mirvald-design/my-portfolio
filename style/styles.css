@@ -56,6 +56,7 @@
   --bg-card: #ffffff;
   --color-primary: #333;
   --bg-btn-color: #f7f7f9;
+  --bg-btn-color-secondary: #fff;
   --border-color-badge: #e6e6e9;
   --btn-text-color: #0f1419;
   --text-badge-available: #1A998E;
@@ -63,13 +64,13 @@
 }
 
 .dark-theme {
-  --bg-color: #0a0a0a;
+  --bg-color: #050505;
   --bg-color-photo: #0F0F0F;
   --text-color: #D4D4D4;
   --text-color-secondary: #999999;
   --bg-card: #0f1419;
   --color-primary: #fff;
-  --bg-btn-color: #262b2f;
+  --bg-btn-color: rgba(255, 255, 255, 0.05);
   --border-color-badge: #3a3e43;
   --btn-text-color: #fff;
   --text-badge-available: #1A998E;
@@ -251,8 +252,17 @@ p {
   display: flex;
 }
 
+.section-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius-web);
+  padding: 12px;
+}
+
 /* Style for primary buttons */
-.button {
+.primary-button {
   display: inline-block;
   padding: 12px 24px;
   background-color: var(--bg-btn-color);
@@ -262,7 +272,7 @@ p {
   color: var(--btn-text-color);
 }
 
-.button secondary {
+.button-secondary {
   display: inline-block;
   padding: 12px 24px;
   background-color: var(--bg-btn-color);
