@@ -5,7 +5,7 @@
 /* Variables */
 :root {
   /* Colors */
-  --bg-color: #000;
+  --bg-color: #121212;
   --bg-color-photo: #F7F7F9;
   --text-color: #fff;
   --text-color-secondary: #a1a1aa;
@@ -57,8 +57,8 @@
 }
 
 .dark-theme {
-  --bg-color: #000000;
-  --bg-color-photo: #262b2f;
+  --bg-color: #0a0a0a;
+  --bg-color-photo: #0F0F0F;
   --text-color: #D4D4D4;
   --text-color-secondary: #999999;
   --bg-card: #0f1419;
