@@ -59,8 +59,8 @@
 .dark-theme {
   --bg-color: #000000;
   --bg-color-photo: #262b2f;
-  --text-color: #fff;
-  --text-color-secondary: #858585;
+  --text-color: #D4D4D4;
+  --text-color-secondary: #999999;
   --bg-card: #0f1419;
   --color-primary: #fff;
   --bg-btn-color: #262b2f;
