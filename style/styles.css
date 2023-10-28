@@ -350,6 +350,11 @@ p {
     gap: var(--gap-12);
   }
 
+
+  .projects-card header{
+    display: flex;
+  }
+
   .projects-card {
     display: flex;
     flex-direction: column;
