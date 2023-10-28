@@ -5,54 +5,33 @@
 /* Variables */
 :root {
   /* Colors */
-  --bg-color: #121212;
-  --bg-color-photo: #F7F7F9;
-  --text-color: #fff;
-  --text-color-secondary: #a1a1aa;
-  --bg-card: #0f1419;
-  --btn-text-color: #0f1419;
-  --border-color-badge: #e6e6e9;
-  --text-badge-available: #1A998E;
-  --bg-badge-available: #rgba(26, 153, 142, 0.1)
-  --bg-btn-color: #f7f7f9;
   --color-icon: #E6E6E9;
 
   /* Fonts */
   --font-default: Urbanist, sans-serif;
 
-  /* Breakpoints */
-  --bp-small: 768px;
-  --bp-large: 1024px;
-
   /* Font sizes and styles */
   --p-text-size: 14px;
-  --p-line-height: 20px;
+  --p-line-height: 24px;
   --p-font-weight: 400;
   --h1-size: 20px;
   --h1-line-height: 32px;
   --h1-font-weight: 600;
 
   /* Padding and spacing */
-  --padding-web: 40px;
-  --padding-card-project: 20px;
-  --padding-mobile: 20px;
+  --padding: 20px;
   --border-radius-web: 24px;
   --border-radius-mobile: 12px;
   --gap-8: 8px;
   --gap-12: 12px;
   --gap-24: 24px;
 
-/* 
-  --title-opacity: 0.2
-  --title-opacity: 0.4
-  --title-opacity: 0.6
-  --title-opacity: 0.8 */
+
 }
 
 /* Themes */
 .light-theme {
   --bg-color: #f5f5f7;
-  --bg-color-photo: #F7F7F9;
   --text-color: #0f1419;
   --text-color-secondary: #666d80;
   --bg-card: #ffffff;
@@ -67,7 +46,6 @@
 
 .dark-theme {
   --bg-color: #050505;
-  --bg-color-photo: #0F0F0F;
   --text-color: #ECE9E4;
   --text-color-secondary: #999999;
   --bg-card: #0f1419;
@@ -313,7 +291,7 @@ p {
     flex-direction: column;
     max-width: 100%;
     gap: var(--gap-12);
-    padding: var(--padding-mobile);
+    padding: var(--padding);
   }
 
   .main-404{
@@ -330,7 +308,7 @@ p {
     align-items: center;
     max-width: 348px;
     background-color: var(--bg-card);
-    padding: var(--padding-web);
+    padding: var(--padding);
     border-radius: var(--border-radius-web);
     gap: var(--gap-24);
   }
@@ -341,7 +319,7 @@ p {
     gap: var(--gap-24);
     background-color: var(--background-dark);
     width: 100%;
-    padding: var(--padding-mobile);
+    padding: var(--padding);
     border-radius: var(--border-radius-mobile);
     background-color: var(--bg-card);
   }
@@ -377,7 +355,7 @@ p {
     flex-direction: column;
     gap: var(--gap-24);
     background-color: var(--bg-card);
-    padding: var(--padding-mobile);
+    padding: var(--padding);
     min-width: 288px;
     border-radius: var(--border-radius-mobile);
   }
@@ -389,7 +367,7 @@ p {
     flex-direction: column;
     max-width: 100%;
     background: var(--bg-card);
-    padding: var(--padding-mobile);
+    padding: var(--padding);
     gap: var(--gap-12);
     border-radius: var(--border-radius-mobile);
   }
@@ -414,7 +392,7 @@ p {
     justify-content: center;
     max-width: 648px;
     gap: var(--gap-12);
-    padding: var(--padding-mobile);
+    padding: var(--padding);
   }
 
   .content-project {
@@ -467,7 +445,7 @@ p {
     align-items: center;
     max-width: 348px;
     background-color: var(--bg-card);
-    padding: var(--padding-web);
+    padding: var(--padding);
     border-radius: var(--border-radius-web);
     gap: var(--gap-24);
   }
@@ -482,7 +460,7 @@ p {
     position: sticky;
     top: 24px;
     max-width: 348px;
-    padding: var(--padding-web);
+    padding: var(--padding);
     background-color: var(--bg-card);
     border-radius: var(--border-radius-web);
   }
@@ -518,7 +496,7 @@ p {
     flex-direction: column;
     gap: var(--gap-24);
     background-color: var(--bg-card);
-    padding: var(--padding-card-project);
+    padding: var(--padding);
     max-width: 348px;
     transition: transform 0.4s, opacity 0.4s;
     border-radius: var(--border-radius-web);
@@ -540,7 +518,7 @@ p {
   .contact {
     display: flex;
     flex-direction: column;
-    padding: var(--padding-web);
+    padding: var(--padding);
     background: var(--bg-card);
     align-content: flex-start;
     align-self: stretch;
@@ -573,8 +551,8 @@ p {
     max-width: 708px;
     margin: auto;
     gap: var(--gap-12);
-    padding-top: var(--padding-web);
-    padding-bottom: var(--padding-web);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
   }
 
   .content-project {
