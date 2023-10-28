@@ -15,6 +15,7 @@
   --text-badge-available: #1A998E;
   --bg-badge-available: #rgba(26, 153, 142, 0.1)
   --bg-btn-color: #f7f7f9;
+  --color-icon: #E6E6E9;
 
   /* Fonts */
   --font-default: Urbanist, sans-serif;
@@ -27,12 +28,13 @@
   --p-text-size: 14px;
   --p-line-height: 20px;
   --p-font-weight: 400;
-  --h1-size: 24px;
+  --h1-size: 20px;
   --h1-line-height: 32px;
   --h1-font-weight: 600;
 
   /* Padding and spacing */
   --padding-web: 40px;
+  --padding-card-project: 20px;
   --padding-mobile: 20px;
   --border-radius-web: 24px;
   --border-radius-mobile: 12px;
@@ -119,6 +121,7 @@ body {
 /* Styles for light and dark icons */
 .material-icons {
   font-size: 24px;
+  color: var(--color-icon);
 }
 
 .light-icon {
@@ -493,9 +496,8 @@ p {
     flex-direction: column;
     gap: var(--gap-24);
     background-color: var(--bg-card);
-    padding: var(--padding-web);
+    padding: var(--padding-card-project);
     max-width: 348px;
-    min-width: 288px;
     transition: transform 0.4s, opacity 0.4s;
     border-radius: var(--border-radius-web);
   }
@@ -509,6 +511,11 @@ p {
     transform: scale(0.9);
     opacity: 0.5;
   }
+
+  .projects-card header{
+    display: flex;
+  }
+
 
 
 
