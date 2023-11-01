@@ -400,7 +400,7 @@ p {
     flex-direction: column;
     gap: var(--gap-12);
     background-color: var(--bg-card);
-    padding: 20px;
+    padding: var(--padding);
     border-radius: var(--border-radius-mobile);
   }
 
@@ -560,7 +560,7 @@ p {
     flex-direction: column;
     gap: var(--gap-24);
     background-color: var(--bg-card);
-    padding: 40px;
+    padding: var(--padding);
     border-radius: var(--border-radius-web);
   }
 
