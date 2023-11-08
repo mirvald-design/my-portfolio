@@ -32,24 +32,37 @@
         <section class="section-nav">
             <a class="button-secondary" href="./index.html" target="">Back</a>
 
-            <!-- Toggle switch -->
-            <div class="toggle-switch">
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle-button">
-                    <span class="slider round">
-                        <i class="material-icons dark-icon">dark_mode</i>
-                        <i class="material-icons light-icon">light_mode</i>
-                    </span>
-                </label>
+
+            <div class="section-nav-right">
+                <!-- Toggle switch -->
+                <div class="toggle-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle-button">
+                        <span class="slider round">
+                            <i class="material-icons dark-icon">dark_mode</i>
+                            <i class="material-icons light-icon">light_mode</i>
+                        </span>
+                    </label>
+                </div>
+                <!-- Toggle switch -->
+                <select id="languageSelect" onchange="switchLanguage(this.value)">
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="uk">🇺🇦 UA</option>
+                </select>
             </div>
-            <!-- Toggle switch -->
         </section>
         <div class="content-project">
             <section>
-                <h1>About VPN-X</h1>
-                <p>It is an application that not only provides security and anonymity in the realm of virtual private
+                <h1 lang="en">About VPN-X</h1>
+                <h1 lang="uk">Про VPN-X</h1>
+                <p lang="en">It is an application that not only provides security and anonymity in the realm of virtual
+                    private
                     networks, but also offers unique functionalities including decentralized access, a referral system
                     and an innovative cashback program. Let's take a closer look at this exciting concept!
+                </p>
+                <p lang="uk">Це додаток, який не тільки забезпечує безпеку та анонімність у сфері віртуальних приватних
+                    мереж, але також пропонує унікальні функції, включаючи децентралізований доступ, реферальну систему
+                    та інноваційну програму повернення коштів.
                 </p>
             </section>
 
@@ -129,23 +142,24 @@
     </div>
 </body>
 <script src="./js/theme.js"></script>
+<script src="./js/lang.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211789768-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-211789768-1');
+    gtag('config', 'UA-211789768-1');
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B964K3D46"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-0B964K3D46');
+    gtag('config', 'G-0B964K3D46');
 </script>
 <script defer data-domain="mirvald.space" src="https://plausible.io/js/script.js"></script>
 
