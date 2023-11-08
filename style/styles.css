@@ -1,6 +1,20 @@
 /* Import fonts with a fallback font */
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap");
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
 @import url(./reset.css);
+
+/* Скрыть русский текст по умолчанию */
+[lang="uk"] {
+  display: none;
+}
+
+/* Класс .ru будет добавлен к тегу <html> или <body>, когда пользователь выберет русский язык */
+.uk [lang="en"] {
+  display: none;
+}
+.uk [lang="uk"] {
+  display: block;
+}
+
 
 /* Variables */
 :root {
@@ -40,8 +54,8 @@
   --bg-btn-color-secondary: #fff;
   --border-color-badge: #e6e6e9;
   --btn-text-color: #0f1419;
-  --text-badge-available: #1A998E;
-  --bg-badge-available: rgba(26, 153, 142, 0.1)
+  --text-badge-available: #4DAA57;
+  --bg-badge-available: #4DAA57;
 }
 
 .dark-theme {
@@ -53,9 +67,42 @@
   --bg-btn-color: rgba(255, 255, 255, 0.05);
   --border-color-badge: #3a3e43;
   --btn-text-color: #fff;
-  --text-badge-available: #1A998E;
+  --text-badge-available: #4DAA57;
   --bg-badge-available: rgba(26, 153, 142, 0.1)
 }
+
+.lang-theme-nav{
+  display: flex;
+  background-color: var(--bg-card);
+  padding: var(--padding);
+  border-radius: var(--border-radius-web);
+  justify-content: space-between;
+}
+
+#languageSelect {
+  padding: 5px 10px;
+  border-radius: var(--border-radius-web);
+  background: var(--bg-btn-color);
+  cursor: pointer;
+  -webkit-appearance: none; /* Для Safari */
+  -moz-appearance: none;    /* Для Firefox */
+  appearance: none; 
+  background-position-x: 95%;
+line-height: ;
+}
+
+
+/* Стилизация для наведения мыши */
+#languageSelect:hover {
+  border-color: #a10000;
+}
+
+/* Стилизация для фокуса на элементе */
+#languageSelect:focus {
+  outline: none;
+  border-color: #555;
+}
+
 
 /* Base Styles */
 body {
@@ -134,14 +181,16 @@ input:checked + .slider .dark-icon {
 .header {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-24);
+  gap: var(--gap-12);
+  background-color: var(--bg-card);
+  padding: var(--padding);
+  border-radius: var(--border-radius-web);
 }
 
 /* Title styles */
 .title {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-12);
   font-weight: 600;
   color: var(--text-opacity);
 }
@@ -151,6 +200,7 @@ input:checked + .slider .dark-icon {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-size: var(--title-size);
+  line-height: var(--title-line);
   
 }
 
@@ -179,9 +229,6 @@ p {
   display: flex;
   align-items: center;
   gap: var(--gap-8);
-  padding: 6px 12px;
-  border-radius: 16px;
-  background-color: var(--bg-badge-available);
   color: var(--text-badge-available);
   font-size: var(--p-text-size);
   line-height: var(--p-line-height);
@@ -193,7 +240,7 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #1a998e;
+  background-color: var(--text-badge-available);
   animation: pulse-animation 1s infinite;
 }
 
@@ -316,24 +363,27 @@ p {
   .left-box {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-24);
+    gap: var(--gap-12);
     background-color: var(--background-dark);
     width: 100%;
-    padding: var(--padding);
-    border-radius: var(--border-radius-mobile);
-    background-color: var(--bg-card);
   }
 
   .avatar {
     display: flex;
     align-items: center;
     gap: var(--gap-12);
+    justify-content: space-between;
+  }
+  .avatar div{
+    display: flex;
+    gap: var(--gap-8);
+    justify-content: space-between;
   }
 
   .avatar-icon {
     width: 44px;
     height: 44px;
-    border-radius: var(--border-radius-mobile);
+    border-radius: var(--border-radius-web);
   }
 
   .right-box {
@@ -353,7 +403,6 @@ p {
   .projects-card {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-24);
     background-color: var(--bg-card);
     padding: var(--padding);
     min-width: 288px;
@@ -459,16 +508,18 @@ p {
     max-height: 852px;
     position: sticky;
     top: 24px;
-    max-width: 348px;
-    padding: var(--padding);
-    background-color: var(--bg-card);
-    border-radius: var(--border-radius-web);
+    max-width: 408px;
+    gap: var(--gap-12);
   }
 
   .avatar {
-    align-items: center;
     display: flex;
-    gap: var(--gap-12);
+    justify-content: space-between;
+  }
+
+  .avatar div{
+    display: flex;
+    gap: var(--gap-8);
   }
 
   .avatar-icon {
@@ -481,7 +532,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-12);
-    max-width: 708px;
+    max-width: 648px;
     overflow-y: auto;
   }
 
@@ -494,10 +545,10 @@ p {
   .projects-card {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-24);
+    gap: var(--gap-12);
     background-color: var(--bg-card);
     padding: var(--padding);
-    max-width: 348px;
+    max-width: 318px;
     transition: transform 0.4s, opacity 0.4s;
     border-radius: var(--border-radius-web);
   }
@@ -520,10 +571,8 @@ p {
     flex-direction: column;
     padding: var(--padding);
     background: var(--bg-card);
-    align-content: flex-start;
-    align-self: stretch;
     flex-wrap: wrap;
-    gap: var(--gap-24);
+    gap: var(--gap-12);
     width: 100%;
     max-width: 708px;
     min-width: 288px;
