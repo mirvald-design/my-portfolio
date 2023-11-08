@@ -553,6 +553,12 @@ p {
     border-radius: var(--border-radius-web);
   }
 
+  .projects-card p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .projects-card:hover {
     transform: scale(1);
     opacity: 1;
