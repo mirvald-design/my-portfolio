@@ -51,8 +51,10 @@
   --text-color: #0d0c22;
   --text-color-secondary: #8f8f8f;
   --bg-card: #ffffff;
+  --bg-badge: #ccc;
   --color-primary: #333;
   --bg-btn-color: #f5f3f0;
+  --text-color-white: #fff;
   --bg-btn-color-secondary: #fff;
   --border-color-badge: #e6e6e9;
   --btn-text-color: #0f1419;
@@ -66,6 +68,7 @@
   --text-color-secondary: #999999;
   --bg-card: #0f1419;
   --color-primary: #fff;
+  --text-color-white: #0d0c22;
   --bg-btn-color: rgba(255, 255, 255, 0.05);
   --border-color-badge: #3a3e43;
   --btn-text-color: #fff;
@@ -325,15 +328,17 @@ p {
 }
 .projects-card section span{
   display: flex;
-  padding: 4px 8px;
+  padding: 3px;
   justify-content: center;
   font-size: 10px;
-  color: var(--text-badge-available);
-  line-height: 16px;
+  color: var(--text-color);
+  line-height: 10px;
+  font-weight: 600;
+  color: var(--text-color-white);
   align-items: center;
-  border-radius: 8px;
+  border-radius: 3px;
   height: fit-content;
-  background: rgba(26, 153, 142, 0.10);
+  background: var(--bg-badge);
 }
 
 /* Media Queries for small screens */
@@ -482,6 +487,10 @@ p {
 
 /* Media Queries for larger screens */
 @media (min-width: 1025px) {
+
+  .clickable-image {
+    cursor: pointer;
+}
 
   .main {
     display: flex;
