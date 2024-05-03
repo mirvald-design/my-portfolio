@@ -388,13 +388,12 @@ p {
 
   .right-box {
     display: flex;
+    flex-direction: column;
     gap: var(--gap-12);
   }
 
 
-
-
-  .projects {
+  .projects-grid {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -474,6 +473,35 @@ p {
     justify-content: center;
     align-items: center;
     align-self: stretch;
+  }
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background-color: #e5e7eb;
+    padding: 4px;
+    border-radius: 24px;
+    width: fit-content;
+  }
+
+  .tablinks {
+    padding: 8px 12px;
+    border-radius: 24px;
+  }
+
+  .tablinks.active{
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06);
+    rgba(255, 255, 255, 1);
+
+  }
+
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent.active {
+    display: block;
   }
 }
 
@@ -578,7 +606,7 @@ p {
 
     background-color: #fff;
     box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06);
-rgba(255, 255, 255, 1)
+    rgba(255, 255, 255, 1);
 
   }
 
