@@ -47,7 +47,7 @@
 
 /* Themes */
 .light-theme {
-  --bg-color: #f5f5f7;
+  --bg-color: #F5F6FA;
   --text-color: #0d0c22;
   --text-color-secondary: #8f8f8f;
   --bg-card: #ffffff;
@@ -426,6 +426,7 @@ p {
   }
 
   .approach,
+  .shots,
   .skills,
   .contact {
     display: flex;
@@ -487,6 +488,28 @@ p {
 
 /* Media Queries for larger screens */
 @media (min-width: 1025px) {
+
+  .shot {
+    display: inline-block;
+}
+
+.shot img {
+    width: 300px; /* Регулируйте размеры под свои нужды */
+    height: auto;
+}
+
+.shot-info {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.shot-info span {
+  margin-right: 5px;
+  padding: 2px 5px;
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
 
   .clickable-image {
     cursor: pointer;
@@ -591,6 +614,7 @@ p {
 
 
   .approach,
+  .shots,
   .skills,
   .contact {
     display: flex;
