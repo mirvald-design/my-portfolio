@@ -1,5 +1,5 @@
 /* Import fonts with a fallback font */
-@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url(./reset.css);
 
 /* Скрыть русский текст по умолчанию */
@@ -21,7 +21,7 @@
   --color-icon: #e6e6e9;
 
   /* Fonts */
-  --font-default: Urbanist, sans-serif;
+  --font-default: Onest, sans-serif;
 
   /* Font sizes and styles */
   --p-text-size: 14px;
