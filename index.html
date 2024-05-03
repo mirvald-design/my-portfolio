@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
 </head>
 <!-- Meta Pixel Code -->
 <script>
@@ -168,33 +169,43 @@
 
         <div class="right-box">
 
+
+            <div class="tabs">
+                <button id="tab-projects" class="tablinks active" onclick="openTab('projects', this)">Проекты</button>
+                <button id="tab-approach" class="tablinks" onclick="openTab('approach', this)">Подход</button>
+                <button id="tab-skills" class="tablinks" onclick="openTab('skills', this)">Навыки</button>
+                <button id="tab-blog" class="tablinks" onclick="openTab('blog', this)">Блог</button>
+            </div>
+            
+            
+
             <!-- projects -->
-            <div class="projects-box">
-
-                <a href="./vpn-x.html">
+            <div id="projects" class="tabcontent active ">
+                
+                <div class="projects-grid">
                     <div class="projects-card">
-
                         <section>
-                            <h1>VPN-X</h1>
+                            <a href="./vpn-x.html">
+                                <h1>VPN-X</h1>
+                            </a>
+    
                             <span>PET</span>
                         </section>
                         <p lang="en">Decentralization, Security, iOS, Cashback, Refferal system
                         </p>
                         <p lang="uk">Децентралізація, Безпека, iOS, Кешбек, Реферальна система
                         </p>
-
-
+    
+    
                         <img src="./images/project-photo/vpn-x/case-overwiev.png"
                             srcset="./images/project-photo/vpn-x/case-overwiev@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
-
-
                     </div>
-                </a>
-
-                <a href="./omyki.html">
+    
                     <div class="projects-card">
-                        <h1>Omyki</h1>
+                        <a href="./omyki.html">
+                            <h1>Omyki</h1>
+                        </a>
                         <p lang="en">Remote Lock, IoT, Smart Key, Access control, Android Mobile App
                         </p>
                         <p lang="uk">Віддалений замок, IoT, смарт-ключ, контроль доступу, мобільний додаток для
@@ -204,48 +215,47 @@
                             srcset="./images/project-photo/omyki/omyki-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
-                <a href="https://mou.today" target="_blank">
+    
                     <div class="projects-card">
                         <section>
-                            <h1>MOU</h1>
+                            <a href="https://mou.today" target="_blank">
+                                <h1>MOU</h1>
+                            </a>
                             <span lang="en">COMING</span>
                         </section>
-
+    
                         <p lang="en">News, Media, Blog, Vacancies, Medicine, Web, Live
                         </p>
                         <p lang="uk">Новини, ЗМІ, Блог, Вакансії, Медицина, Web, Live
                         </p>
-
+    
                         <img src="./images/project-photo/MOU/MOU-case@1x.png"
                             srcset="./images/project-photo/MOU/MOU-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
-                <a href="./sub&earn.html">
+    
                     <div class="projects-card">
-
-                        <h1>Sub2Earn</h1>
+    
+                        <a href="./sub&earn.html">
+                            <h1>Sub2Earn</h1>
+                        </a>
                         <p lang="en">Social Media, Influencer Marketing, Monetization
                         </p>
                         <p lang="uk">Соціальні медіа, інфлюенсер-маркетинг, монетизація
                         </p>
-
+    
                         <img src="./images/project-photo/sub&earn/sub2earn-case@1x.png"
                             srcset="./images/project-photo/sub&earn/sub2earn-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
-
-
-                <a href="https://qoffer.com" target="_blank">
+    
+    
                     <div class="projects-card">
-
+    
                         <section>
-                            <h1>Qoffer</h1>
+                            <a href="https://qoffer.com" target="_blank">
+                                <h1>Qoffer</h1>
+                            </a>
                             <span lang="en">COMING</span>
                         </section>
                         <p lang="en">Service Booking, Marketplace, Local Services, Discounts & Special Offers
@@ -256,38 +266,36 @@
                             srcset="./images/project-photo/qoffer/qoffer-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
-                <a href="https://holyheld.com" target="_blank">
+    
                     <div class="projects-card">
-
+    
                         <section>
-                            <h1>Holyheld</h1>
+                            <a href="https://holyheld.com" target="_blank">
+                                <h1>Holyheld</h1>
+                            </a>
                             <span lang="en">COMING</span>
                         </section>
-
+    
                         <p lang="en">Web3, Crypto, Wallet, WebApp, DAO, DEXs, Cashback, Apple Pay, Google Pay
                         </p>
                         <p lang="uk">Web3, криптовалюта, кошелек, WebApp, DAO, DEXs, Cashback, Apple Pay, Google Pay
                         </p>
-
-
+    
+    
                         <img src="./images/project-photo/holyheld/holyheld-case@1x.png"
                             srcset="./images/project-photo/holyheld/holyheld-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
-
-
-
-                <a href="https://lotusmarket.io" target="_blank">
+    
+    
                     <div class="projects-card">
                         <section>
-                            <h1>Lotusmarket</h1>
+                            <a href="https://lotusmarket.io" target="_blank">
+                                <h1>Lotusmarket</h1>
+                            </a>
                             <span lang="en">COMING</span>
                         </section>
-
+    
                         <p lang="en">DEX Token Listing, Tracking, Liquidity Management
                         </p>
                         <p lang="uk">Лістинг, відстеження, управління ліквідністю токенів DEX
@@ -296,92 +304,110 @@
                             srcset="./images/project-photo/lotusmarket/lotusmarket-case@4x.png 2x"
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" class="">
                     </div>
-                </a>
-
+                </div>
+                
 
             </div>
             <!-- projects -->
 
             <!-- Approach -->
-            <div class="approach">
-                <h1 lang="en">Approach</h1>
-                <h1 lang="uk">Підхід</h1>
-                <article class="approach-article">
-                    <span class="badge">Крок 1</span>
-                    <p lang="en">I begin by immersing myself in your project's objectives and user needs, crafting a
-                        strategic plan that lays the groundwork for a compelling product.</p>
-                    <p lang="uk">Я починаю з того, що занурююсь у цілі вашого проекту та потреби користувачів,
-                        розробляючи стратегічний план, який закладає основу для створення переконливого продукту.</p>
-                </article>
+            <div id="approach" class="tabcontent">
+                <div class="approach" >
+                    <h1 lang="en">Approach</h1>
+                    <h1 lang="uk">Підхід</h1>
+                    <article class="approach-article">
+                        <span class="badge">Крок 1</span>
+                        <p lang="en">I begin by immersing myself in your project's objectives and user needs, crafting a
+                            strategic plan that lays the groundwork for a compelling product.</p>
+                        <p lang="uk">Я починаю з того, що занурююсь у цілі вашого проекту та потреби користувачів,
+                            розробляючи стратегічний план, який закладає основу для створення переконливого продукту.
+                        </p>
+                    </article>
 
-                <article class="approach-article">
-                    <span class="badge">Крок 2</span>
-                    <p lang="en">With your brand and audience in mind, I translate ideas into captivating and intuitive
-                        design concepts that distinguish your product in the marketplace.
-                    </p>
-                    <p lang="uk">Беручи до уваги ваш бренд та аудиторію, я втілюю ідеї в захоплюючі та інтуїтивно
-                        зрозумілі концепції дизайну, які вирізняють ваш продукт на ринку.
-                    </p>
-                </article>
+                    <article class="approach-article">
+                        <span class="badge">Крок 2</span>
+                        <p lang="en">With your brand and audience in mind, I translate ideas into captivating and
+                            intuitive
+                            design concepts that distinguish your product in the marketplace.
+                        </p>
+                        <p lang="uk">Беручи до уваги ваш бренд та аудиторію, я втілюю ідеї в захоплюючі та інтуїтивно
+                            зрозумілі концепції дизайну, які вирізняють ваш продукт на ринку.
+                        </p>
+                    </article>
 
-                <article class="approach-article">
-                    <span class="badge">Крок 3</span>
-                    <p lang="en">In collaboration with developers, I bring the design to life, employing modern
-                        technologies and best practices to ensure the product is not only functional but also engaging.
-                    </p>
-                    <p lang="uk">У співпраці з розробниками я втілюю дизайн у життя, використовуючи сучасні технології
-                        та найкращі практики, щоб продукт був не лише функціональним, але й цікавим.</p>
-                </article>
+                    <article class="approach-article">
+                        <span class="badge">Крок 3</span>
+                        <p lang="en">In collaboration with developers, I bring the design to life, employing modern
+                            technologies and best practices to ensure the product is not only functional but also
+                            engaging.
+                        </p>
+                        <p lang="uk">У співпраці з розробниками я втілюю дизайн у життя, використовуючи сучасні
+                            технології
+                            та найкращі практики, щоб продукт був не лише функціональним, але й цікавим.</p>
+                    </article>
 
-                <article class="approach-article">
-                    <span class="badge">Крок 4</span>
-                    <p lang="en">The launch marks the debut of your product to its intended audience. I oversee a smooth
-                        rollout, then shift to analyzing performance data to refine and enhance the product's impact.
-                    </p>
-                    <p lang="uk">Запуск знаменує собою дебют вашого продукту перед цільовою аудиторією. Я стежу за
-                        плавним розгортанням, а потім переходжу до аналізу даних про ефективність, щоб удосконалити та
-                        посилити вплив продукту.</p>
-                </article>
+                    <article class="approach-article">
+                        <span class="badge">Крок 4</span>
+                        <p lang="en">The launch marks the debut of your product to its intended audience. I oversee a
+                            smooth
+                            rollout, then shift to analyzing performance data to refine and enhance the product's
+                            impact.
+                        </p>
+                        <p lang="uk">Запуск знаменує собою дебют вашого продукту перед цільовою аудиторією. Я стежу за
+                            плавним розгортанням, а потім переходжу до аналізу даних про ефективність, щоб удосконалити
+                            та
+                            посилити вплив продукту.</p>
+                    </article>
 
-                <article class="approach-article">
-                    <span class="badge">Крок 5</span>
-                    <p lang="en">Product development is an ongoing journey. I stay engaged, responding to user feedback
-                        and market changes, continually evolving the product to exceed expectations.
-                    </p>
-                    <p lang="uk">Розробка продукту - це безперервна подорож. Я залишаюся залученим, реагую на відгуки
-                        користувачів і зміни на ринку, постійно розвиваючи продукт, щоб перевершити очікування.
-                    </p>
-                </article>
+                    <article class="approach-article">
+                        <span class="badge">Крок 5</span>
+                        <p lang="en">Product development is an ongoing journey. I stay engaged, responding to user
+                            feedback
+                            and market changes, continually evolving the product to exceed expectations.
+                        </p>
+                        <p lang="uk">Розробка продукту - це безперервна подорож. Я залишаюся залученим, реагую на
+                            відгуки
+                            користувачів і зміни на ринку, постійно розвиваючи продукт, щоб перевершити очікування.
+                        </p>
+                    </article>
+                </div>
+                    
             </div>
             <!-- Approach -->
 
+            <!-- Skills -->
+            <div id="skills" class="tabcontent">
+                <div class="skills">
+                    <h1 lang="en">Skills</h1>
+                    <h1 lang="uk">Навички</h1>
+                    <div class="skills-badges">
+                        <span class="badge">Product UI/UX Design</span>
+                        <span class="badge">Strategy</span>
+                        <span class="badge">0 > 1 Projects</span>
+                        <span class="badge">Branding</span>
+                        <span class="badge">Design systems</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">HTML+CSS</span>
+                        <span class="badge">Management</span>
+                        <span class="badge">Webflow</span>
+                    </div>  
+                </div>
+                    
+            </div>
+            <!-- Skills -->
 
+            <!-- blog -->
+            <div id="blog" class="tabcontent">
+                **Контент блога**
+            </div>
+            <!-- blog -->
+
+            <!-- dribbble -->
             <!-- <div id="shots" class="shots">
                 <h1>Мои Dribbble Шоты</h1>
                 <div id="shots"></div> 
-            </div> -->
-
-            <div id="skills" class="skills">
-                <h1 lang="en">Skills</h1>
-                <h1 lang="uk">Навички</h1>
-                <!-- Skills -->
-                <div class="skills-badges">
-                    <span class="badge">Product UI/UX Design</span>
-                    <span class="badge">Strategy</span>
-                    <span class="badge">0 > 1 Projects</span>
-                    <span class="badge">Branding</span>
-                    <span class="badge">Design systems</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">HTML+CSS</span>
-                    <span class="badge">Management</span>
-                    <span class="badge">Webflow</span>
-                </div>
-                <!-- Skills -->
-            </div>
-
-
-
-
+                </div> -->
+            <!-- dribbble -->
         </div>
 
     </div>
@@ -389,7 +415,8 @@
 
     </div>
 </body>
-<script src="./js/dribbble.js"></script>
+<script src="./js/tabs.js"></script>
+<!-- <script src="./js/dribbble.js"></script> -->
 <script src="./js/lang.js"></script>
 <script src="./js/theme.js"></script>
 <script src="./js/title.js"></script>

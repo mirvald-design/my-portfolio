@@ -15,13 +15,10 @@
   display: block;
 }
 
-
-
-
 /* Variables */
 :root {
   /* Colors */
-  --color-icon: #E6E6E9;
+  --color-icon: #e6e6e9;
 
   /* Fonts */
   --font-default: Urbanist, sans-serif;
@@ -41,13 +38,11 @@
   --gap-8: 8px;
   --gap-12: 12px;
   --gap-24: 24px;
-
-
 }
 
 /* Themes */
 .light-theme {
-  --bg-color: #F5F6FA;
+  --bg-color: #f5f6fa;
   --text-color: #0d0c22;
   --text-color-secondary: #8f8f8f;
   --bg-card: #ffffff;
@@ -58,13 +53,13 @@
   --bg-btn-color-secondary: #fff;
   --border-color-badge: #e6e6e9;
   --btn-text-color: #0f1419;
-  --text-badge-available: #4DAA57;
-  --bg-badge-available: #4DAA57;
+  --text-badge-available: #4daa57;
+  --bg-badge-available: #4daa57;
 }
 
 .dark-theme {
   --bg-color: #050505;
-  --text-color: #ECE9E4;
+  --text-color: #ece9e4;
   --text-color-secondary: #999999;
   --bg-card: #0f1419;
   --color-primary: #fff;
@@ -72,11 +67,11 @@
   --bg-btn-color: rgba(255, 255, 255, 0.05);
   --border-color-badge: #3a3e43;
   --btn-text-color: #fff;
-  --text-badge-available: #4DAA57;
-  --bg-badge-available: rgba(26, 153, 142, 0.1)
+  --text-badge-available: #4daa57;
+  --bg-badge-available: rgba(26, 153, 142, 0.1);
 }
 
-.lang-theme-nav{
+.lang-theme-nav {
   display: flex;
   background-color: var(--bg-card);
   padding: var(--padding);
@@ -90,20 +85,18 @@
   background: var(--bg-btn-color);
   cursor: pointer;
   -webkit-appearance: none; /* Для Safari */
-  -moz-appearance: none;    /* Для Firefox */
-  appearance: none; 
+  -moz-appearance: none; /* Для Firefox */
+  appearance: none;
   background-position-x: 95%;
   font-size: 14px;
   line-height: 24px;
 }
-
 
 /* Стилизация для фокуса на элементе */
 #languageSelect:focus {
   outline: none;
   border-color: #555;
 }
-
 
 /* Base Styles */
 body {
@@ -202,7 +195,6 @@ input:checked + .slider .dark-icon {
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-size: var(--title-size);
   line-height: var(--title-line);
-  
 }
 
 .title .animated.active {
@@ -282,7 +274,7 @@ p {
   display: flex;
 }
 
-.section-nav{
+.section-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -291,7 +283,7 @@ p {
   padding: 12px;
 }
 
-.section-nav-right{
+.section-nav-right {
   display: flex;
   gap: var(--gap-12);
   align-items: center;
@@ -320,13 +312,12 @@ p {
   color: var(--btn-text-color);
 }
 
-
-.projects-card section{
+.projects-card section {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.projects-card section span{
+.projects-card section span {
   display: flex;
   padding: 3px;
   justify-content: center;
@@ -351,7 +342,7 @@ p {
     padding: var(--padding);
   }
 
-  .main-404{
+  .main-404 {
     display: flex;
     margin: auto;
     align-items: center;
@@ -384,7 +375,7 @@ p {
     gap: var(--gap-12);
     justify-content: space-between;
   }
-  .avatar div{
+  .avatar div {
     display: flex;
     gap: var(--gap-8);
     justify-content: space-between;
@@ -399,16 +390,17 @@ p {
   .right-box {
     display: flex;
     gap: var(--gap-12);
-    flex-direction: column;
   }
 
-  .projects-box {
+
+
+
+  .projects {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: var(--gap-12);
   }
-
 
   .projects-card {
     display: flex;
@@ -419,7 +411,7 @@ p {
     gap: var(--gap-12);
     border-radius: var(--border-radius-mobile);
   }
-  .projects-card p{
+  .projects-card p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -488,32 +480,30 @@ p {
 
 /* Media Queries for larger screens */
 @media (min-width: 1025px) {
-
   .shot {
     display: inline-block;
-}
+  }
 
-.shot img {
+  .shot img {
     width: 300px; /* Регулируйте размеры под свои нужды */
     height: auto;
-}
+  }
 
-.shot-info {
-  margin-top: 10px;
-  font-size: 0.9em;
-}
+  .shot-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
 
-.shot-info span {
-  margin-right: 5px;
-  padding: 2px 5px;
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
+  .shot-info span {
+    margin-right: 5px;
+    padding: 2px 5px;
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
 
   .clickable-image {
     cursor: pointer;
-}
+  }
 
   .main {
     display: flex;
@@ -524,7 +514,7 @@ p {
     padding-bottom: 24px;
   }
 
-  .main-404{
+  .main-404 {
     display: flex;
     margin: auto;
     align-items: center;
@@ -560,7 +550,7 @@ p {
     justify-content: space-between;
   }
 
-  .avatar div{
+  .avatar div {
     display: flex;
     gap: var(--gap-8);
   }
@@ -571,18 +561,47 @@ p {
     border-radius: var(--border-radius-web);
   }
 
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background-color: #e5e7eb;
+    padding: 4px;
+    border-radius: 24px;
+    width: fit-content;
+  }
+
+  .tablinks {
+    padding: 12px 8px;
+    border-radius: 24px;
+  }
+
+  .tablinks.active{
+    background-color: #fff;
+  }
+
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }
+
+
   .right-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-12);
+    box-sizing: border-box;
+    max-width: 648px;
+  }
+
+  .projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-12);
     max-width: 648px;
-    overflow-y: auto;
-  }
-
-  .projects-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap-12);
+    box-sizing: border-box;
   }
 
   .projects-card {
@@ -591,12 +610,12 @@ p {
     gap: var(--gap-12);
     background-color: var(--bg-card);
     padding: var(--padding);
-    max-width: 318px;
+    width: 318px;
     transition: transform 0.4s, opacity 0.4s;
     border-radius: var(--border-radius-web);
   }
 
-  .projects-card p{
+  .projects-card p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -607,11 +626,10 @@ p {
     opacity: 1;
   }
 
-  .projects-box:hover .projects-card:not(:hover) {
+  .projects:hover .projects-card:not(:hover) {
     transform: scale(0.9);
     opacity: 0.5;
   }
-
 
   .approach,
   .shots,
@@ -663,14 +681,11 @@ p {
     border-radius: var(--border-radius-web);
   }
 
-
-
   .container-photo {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-12);
   }
-
 
   .container-photo-text {
     display: flex;
@@ -680,5 +695,4 @@ p {
     align-items: center;
     align-self: stretch;
   }
-
 }
