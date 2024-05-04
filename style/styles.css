@@ -1,5 +1,5 @@
 /* Import fonts with a fallback font */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 @import url(./reset.css);
 
 /* Скрыть русский текст по умолчанию */
@@ -392,7 +392,6 @@ p {
     gap: var(--gap-12);
   }
 
-
   .projects-grid {
     display: flex;
     overflow-x: scroll;
@@ -488,18 +487,16 @@ p {
     border-radius: 24px;
   }
 
-  .tablinks.active{
-
+  .tablinks.active {
     background-color: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba 20, 21, 26, 0.06,
-    rgba 255, 255, 255, 1;
-
+    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.1), 0px 1px 2px 0px rgba 20,
+      21, 26, 0.06, rgba 255, 255, 255, 1;
   }
 
   .tabcontent {
     display: none;
   }
-  
+
   .tabcontent.active {
     display: block;
   }
@@ -602,29 +599,26 @@ p {
     border-radius: 24px;
   }
 
-  .tablinks.active{
-
+  .tablinks.active {
     background-color: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06)
-    rgba(255, 255, 255, 1);
-
+    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.1),
+      0px 1px 2px 0px rgba(20, 21, 26, 0.06) rgba(255, 255, 255, 1);
   }
 
   .tabcontent {
     display: none;
   }
-  
+
   .tabcontent.active {
     display: block;
   }
-
 
   .right-box {
     display: flex;
     flex-direction: column;
     gap: var(--gap-12);
     box-sizing: border-box;
-    max-width: 648px;
+    width: 60.7%;
   }
 
   .projects-grid {
@@ -641,7 +635,7 @@ p {
     background-color: var(--bg-card);
     padding: var(--padding);
     width: 318px;
-    
+
     border-radius: var(--border-radius-web);
   }
 
@@ -727,12 +721,33 @@ p {
     align-self: stretch;
   }
 
-  .card-blog {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #050505;
-}
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 24px;
+    border: 1px solid #E5E7EB;
+  }
 
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    
+  }
+
+  .card {
+    max-width: 293px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
 }
