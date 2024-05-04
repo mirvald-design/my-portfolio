@@ -491,8 +491,8 @@ p {
   .tablinks.active{
 
     background-color: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06);
-    rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba 20, 21, 26, 0.06,
+    rgba 255, 255, 255, 1;
 
   }
 
@@ -605,7 +605,7 @@ p {
   .tablinks.active{
 
     background-color: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06);
+    box-shadow: 0px 1px 3px 0px rgba(20, 21, 26, 0.10), 0px 1px 2px 0px rgba(20, 21, 26, 0.06)
     rgba(255, 255, 255, 1);
 
   }
@@ -632,7 +632,6 @@ p {
     flex-wrap: wrap;
     gap: var(--gap-12);
     max-width: 648px;
-    box-sizing: border-box;
   }
 
   .projects-card {
@@ -642,7 +641,7 @@ p {
     background-color: var(--bg-card);
     padding: var(--padding);
     width: 318px;
-    transition: transform 0.4s, opacity 0.4s;
+    
     border-radius: var(--border-radius-web);
   }
 
@@ -654,6 +653,7 @@ p {
 
   .projects-card:hover {
     transform: scale(1);
+    transition: transform 0.4s, opacity 0.4s;
     opacity: 1;
   }
 
@@ -726,4 +726,13 @@ p {
     align-items: center;
     align-self: stretch;
   }
+
+  .card-blog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #050505;
+}
+
 }
